@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myDreamPlace||Search Page</title>
+    <link rel="stylesheet" href="./css/generals.css" />
+    
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+  </head>
+  <body>
+    <section class="search-header">
+      <div class="container container--special">
+        <header class="main-header">
+          <div class="logo">
+            <ion-icon
+              name="airplane"
+              class="logo__icon logo__icon--white"
+            ></ion-icon>
+            <span class="logo__text logo__text--white">my Dream Place</span>
+          </div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--white">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--white">Discover</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--white">Activities</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--white">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--white">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__user">
+            <div class="user__notification-box">
+              <ion-icon
+                name="notifications"
+                class="notification__icon notification__icon--white"
+              ></ion-icon>
+            </div>
+            <img
+              src="./images/user.jpg"
+              alt="Chyanit"
+              class="header__user-img"
+            />
+          </div>
+        </header>
+        <div class="booking booking--special">
+          <div class="booking__location">
+            <ion-icon name="location-outline" class="booking__icon"></ion-icon>
+            <span class="booking__text">Where are you going?</span>
+          </div>
+          <div class="booking__date">
+            <ion-icon name="calendar-outline" class="booking__icon"></ion-icon>
+            <span class="booking__text">Check in date</span>
+          </div>
+          <div class="booking__date">
+            <ion-icon name="calendar-outline" class="booking__icon"></ion-icon>
+            <span class="booking__text">Check out date</span>
+          </div>
+          <div class="booking__guest">
+            <ion-icon name="person-outline" class="booking__icon"></ion-icon>
+            <span class="booking__text">Guests</span>
+          </div>
+          <button class="btn-booking">Search</button>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="search-result">
+        <div class="left">
+          <div class="property-search">
+            <h4 class="heading--mini">Search by property name</h4>
+            <div class="search-name">
+              <ion-icon
+                name="search-outline"
+                class="search-name-icon"
+              ></ion-icon>
+              <span class="search-result-text">eg. Beach Westpalm</span>
+            </div>
+          </div>
+
+          <div class="search-filter">
+            <div class="filter-heading">
+              <h4 class="heading--mini">Filter by</h4>
+            </div>
+          </div>
+          <div class="filter-by">
+            <div class="filter-by-top">
+              <h4 class="heading--mini">Search by property name</h4>
+            </div>
+            <div class="filter-by-content">
+              <div class="filter-group">
+                <div class="filter-item">
+                  <input type="checkbox" class="filter-checkbox" />
+                  <span class="filter-middle">$ 0 - $ 200</span>
+                  <span class="filter-last">200</span>
+                </div>
+                <div class="filter-item">
+                  <input type="checkbox" class="filter-checkbox" />
+                  <span class="filter-middle">$ 200 - $ 500</span>
+                  <span class="filter-last">200</span>
+                </div>
+                <div class="filter-item">
+                  <input type="checkbox" class="filter-checkbox" />
+                  <span class="filter-middle">$ 500 - $ 1,000</span>
+                  <span class="filter-last">200</span>
+                </div>
+                <div class="filter-item">
+                  <input type="checkbox" class="filter-checkbox" />
+                  <span class="filter-middle">$ 1,000 - $ 2,000</span>
+                  <span class="filter-last">200</span>
+                </div>
+                <div class="filter-item">
+                  <input type="checkbox" class="filter-checkbox" />
+                  <span class="filter-middle">$ 2,000 - $ 5,000</span>
+                  <span class="filter-last">200</span>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <span class="content-bottom-text">set your own budget</span>
+                <ion-icon
+                  name="toggle-outline"
+                  class="content-bottom-icon"
+                ></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="filter-by">
+            <div class="filter-by-top">
+              <h4 class="heading--mini">Rating</h4>
+            </div>
+            <div class="filter-by-content">
+              <div class="filter-group">
+                <span>show only ratings more than</span>
+                <div class="filter-by-stars">
+                  <div class="by-star">
+                    <span>1</span>
+                    <ion-icon
+                      name="star"
+                      class="filter-by-star-icon"
+                    ></ion-icon>
+                  </div>
+                  <div class="by-star">
+                    <span>2</span>
+                    <ion-icon
+                      name="star"
+                      class="filter-by-star-icon"
+                    ></ion-icon>
+                  </div>
+                  <div class="by-star">
+                    <span>3</span>
+                    <ion-icon
+                      name="star"
+                      class="filter-by-star-icon"
+                    ></ion-icon>
+                  </div>
+                  <div class="by-star">
+                    <span>4</span>
+                    <ion-icon
+                      name="star"
+                      class="filter-by-star-icon"
+                    ></ion-icon>
+                  </div>
+                  <div class="by-star">
+                    <span>5</span>
+                    <ion-icon
+                      name="star"
+                      class="filter-by-star-icon"
+                    ></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-by">
+            <div class="filter-by-top">
+              <h4 class="heading--mini">Popular filters</h4>
+            </div>
+            <div class="filter-by-content">
+              <div class="filter-group">
+                <div class="filter-item">
+                  <input type="checkbox" class="filter-checkbox" />
+                  <span class="filter-middle">Free cancellation</span>
+                  <span class="filter-last">200</span>
+                </div>
+                <div class="filter-item">
+                  <input type="checkbox" class="filter-checkbox" />
+                  <span class="filter-middle">spa</span>
+                  <span class="filter-last">100</span>
+                </div>
+                <div class="filter-item">
+                  <input type="checkbox" class="filter-checkbox" />
+                  <span class="filter-middle">beach front </span>
+                  <span class="filter-last">15</span>
+                </div>
+                <div class="filter-item">
+                  <input type="checkbox" class="filter-checkbox" />
+                  <span class="filter-middle">hot tub/jacuzzi</span>
+                  <span class="filter-last">12</span>
+                </div>
+                <div class="filter-item">
+                  <input type="checkbox" class="filter-checkbox" />
+                  <span class="filter-middle">Book without credit card</span>
+                  <span class="filter-last">230</span>
+                </div>
+                <div class="filter-item">
+                  <input type="checkbox" class="filter-checkbox" />
+                  <span class="filter-middle">No prepayment</span>
+                  <span class="filter-last">12</span>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="filter-by">
+            <div class="filter-by-top">
+              <h4 class="heading--mini">Activities</h4>
+            </div>
+            <div class="filter-by-content">
+              <div class="filter-group">
+                <div class="filter-item">
+                  <input type="checkbox" class="filter-checkbox" />
+                  <span class="filter-middle">Fishing</span>
+                  <span class="filter-last">200</span>
+                </div>
+                <div class="filter-item">
+                  <input type="checkbox" class="filter-checkbox" />
+                  <span class="filter-middle">Hiking</span>
+                  <span class="filter-last">100</span>
+                </div>
+                <div class="filter-item">
+                  <input type="checkbox" class="filter-checkbox" />
+                  <span class="filter-middle">beach</span>
+                  <span class="filter-last">15</span>
+                </div>
+                <div class="filter-item">
+                  <input type="checkbox" class="filter-checkbox" />
+                  <span class="filter-middle">cycling</span>
+                  <span class="filter-last">12</span>
+                </div>
+                <div class="filter-item">
+                  <input type="checkbox" class="filter-checkbox" />
+                  <span class="filter-middle">sauna</span>
+                  <span class="filter-last">230</span>
+                </div>
+                <div class="filter-item">
+                  <input type="checkbox" class="filter-checkbox" />
+                  <span class="filter-middle">Night Lights</span>
+                  <span class="filter-last">12</span>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <h2 class="heading-primary">Melbourne: 2582 search results found</h2>
+          <div class="search-result-options-container">
+            <div class="search-result-options">
+              <div class="result-option result-option--special">Our top picks</div>
+              <div class="result-option">Hotels and Apartments</div>
+              <div class="result-option">Residence</div>
+              <div class="result-option">Resort</div>
+              <div class="result-option">Shared space</div>
+              
+  
+            </div>
+            <div class="search-sort-by">
+              <div class="sort-by-text">
+                <p class="sort-by-first">Sort by</p>
+                <p class="sort-by-second">Recommended</p>
+              </div>
+              <ion-icon name="chevron-down" class="search-sort-by-icon"></ion-icon>
+            </div>
+          </div>
+          <div class="search-card">
+            <figure class="search-card-figure">
+              <img src="./images/search-1.jpg" alt="Hotel 1" class="search-card-img">
+            </figure>
+            <div class="search-card-content">
+              <h3 class="overview__heading">Lakeside Motel Warefront</h3>
+              <div class="product--stars">
+                <div class="stars-container">
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star-half" class="star-icon"></ion-icon>
+                </div>
+                <p class="product-rating">4.5 (1200 Reviews)</p>
+              </div>
+              <div class="search-card-description">
+                <h4 class="search-card-title">Live a little and celebrate with champane</h4>
+                <p class="search-card-description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, velit itaque, fuga explicabo minima cum error atque</p>
+              </div>
+              <button class="search-card-button">See availability</button>
+              <div class="search-card-promotion-top">
+                Book now and receive 15% off
+              </div>
+              <div class="search-card-promotion-bottom">
+                <span class="green">5% off</span>
+                <p class="num-days">1 room 2 days</p>
+                <p class="price"><span class="cut-through">$150</span><strong class="bigi-text">$130</strong></p>
+                <p class="last-text">includes taxes and fees</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="search-card">
+            <figure class="search-card-figure">
+              <img src="./images/search-2.jpg" alt="Hotel 1" class="search-card-img">
+            </figure>
+            <div class="search-card-content">
+              <h3 class="overview__heading">Julia Dense Resort</h3>
+              <div class="product--stars">
+                <div class="stars-container">
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star-half" class="star-icon"></ion-icon>
+                </div>
+                <p class="product-rating">4.5 (1200 Reviews)</p>
+              </div>
+              <div class="search-card-description">
+                <h4 class="search-card-title">Live a little and celebrate with champane</h4>
+                <p class="search-card-description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, velit itaque, fuga explicabo minima cum error atque</p>
+              </div>
+              <button class="search-card-button">See availability</button>
+              <div class="search-card-promotion-top hide">
+                Book now and receive 15% off
+              </div>
+              <div class="search-card-promotion-bottom">
+                <span class="green hide">5% off</span>
+                <p class="num-days">1 room 2 days</p>
+                <p class="price"><span class="cut-through hide">$150</span><strong class="bigi-text">$130</strong></p>
+                <p class="last-text">includes taxes and fees</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="search-card">
+            <figure class="search-card-figure">
+              <img src="./images/search-3.jpg" alt="Hotel 1" class="search-card-img">
+            </figure>
+            <div class="search-card-content">
+              <h3 class="overview__heading">Anghim Septer Hotel</h3>
+              <div class="product--stars">
+                <div class="stars-container">
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star-half" class="star-icon"></ion-icon>
+                </div>
+                <p class="product-rating">4.5 (1200 Reviews)</p>
+              </div>
+              <div class="search-card-description">
+                <h4 class="search-card-title">Live a little and celebrate with champane</h4>
+                <p class="search-card-description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, velit itaque, fuga explicabo minima cum error atque</p>
+              </div>
+              <button class="search-card-button">See availability</button>
+              <div class="search-card-promotion-top search-card-promotion-top--special">
+                Receive 30% discount on a restaurant
+              </div>
+              <div class="search-card-promotion-bottom">
+                <span class="green hide">5% off</span>
+                <p class="num-days">1 room 2 days</p>
+                <p class="price"><span class="cut-through hide">$150</span><strong class="bigi-text">$130</strong></p>
+                <p class="last-text">includes taxes and fees</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="search-card">
+            <figure class="search-card-figure">
+              <img src="./images/search-4.jpg" alt="Hotel 1" class="search-card-img">
+            </figure>
+            <div class="search-card-content">
+              <h3 class="overview__heading">Marine Ford Hotel</h3>
+              <div class="product--stars">
+                <div class="stars-container">
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star-half" class="star-icon"></ion-icon>
+                </div>
+                <p class="product-rating">4.5 (1200 Reviews)</p>
+              </div>
+              <div class="search-card-description">
+                <h4 class="search-card-title">Live a little and celebrate with champane</h4>
+                <p class="search-card-description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, velit itaque, fuga explicabo minima cum error atque</p>
+              </div>
+              <button class="search-card-button">See availability</button>
+              <div class="search-card-promotion-top hide">
+                Book now and receive 15% off
+              </div>
+              <div class="search-card-promotion-bottom">
+                <span class="green hide">5% off</span>
+                <p class="num-days">1 room 2 days</p>
+                <p class="price"><span class="cut-through hide">$150</span><strong class="bigi-text">$130</strong></p>
+                <p class="last-text">includes taxes and fees</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="search-card">
+            <figure class="search-card-figure">
+              <img src="./images/search-5.jpg" alt="Hotel 1" class="search-card-img">
+            </figure>
+            <div class="search-card-content">
+              <h3 class="overview__heading">Shanghai Open House</h3>
+              <div class="product--stars">
+                <div class="stars-container">
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star-half" class="star-icon"></ion-icon>
+                </div>
+                <p class="product-rating">4.5 (1200 Reviews)</p>
+              </div>
+              <div class="search-card-description">
+                <h4 class="search-card-title">Live a little and celebrate with champane</h4>
+                <p class="search-card-description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, velit itaque, fuga explicabo minima cum error atque</p>
+              </div>
+              <button class="search-card-button">See availability</button>
+              <div class="search-card-promotion-top hide">
+                Book now and receive 15% off
+              </div>
+              <div class="search-card-promotion-bottom">
+                <span class="green hide">5% off</span>
+                <p class="num-days">1 room 2 days</p>
+                <p class="price"><span class="cut-through hide">$150</span><strong class="bigi-text">$130</strong></p>
+                <p class="last-text">includes taxes and fees</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="search-card">
+            <figure class="search-card-figure">
+              <img src="./images/search-6.jpg" alt="Hotel 1" class="search-card-img">
+            </figure>
+            <div class="search-card-content">
+              <h3 class="overview__heading">Ocean Waves Resort</h3>
+              <div class="product--stars">
+                <div class="stars-container">
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star-half" class="star-icon"></ion-icon>
+                </div>
+                <p class="product-rating">4.5 (1200 Reviews)</p>
+              </div>
+              <div class="search-card-description">
+                <h4 class="search-card-title">Live a little and celebrate with champane</h4>
+                <p class="search-card-description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, velit itaque, fuga explicabo minima cum error atque</p>
+              </div>
+              <button class="search-card-button">See availability</button>
+              <div class="search-card-promotion-top hide">
+                Book now and receive 15% off
+              </div>
+              <div class="search-card-promotion-bottom">
+                <span class="green hide">5% off</span>
+                <p class="num-days">1 room 2 days</p>
+                <p class="price"><span class="cut-through hide">$150</span><strong class="bigi-text">$130</strong></p>
+                <p class="last-text">includes taxes and fees</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="search-card">
+            <figure class="search-card-figure">
+              <img src="./images/search-7.jpg" alt="Hotel 1" class="search-card-img">
+            </figure>
+            <div class="search-card-content">
+              <h3 class="overview__heading">Miami City Frontier</h3>
+              <div class="product--stars">
+                <div class="stars-container">
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star-half" class="star-icon"></ion-icon>
+                </div>
+                <p class="product-rating">4.5 (1200 Reviews)</p>
+              </div>
+              <div class="search-card-description">
+                <h4 class="search-card-title">Live a little and celebrate with champane</h4>
+                <p class="search-card-description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, velit itaque, fuga explicabo minima cum error atque</p>
+              </div>
+              <button class="search-card-button">See availability</button>
+              <div class="search-card-promotion-top search-card-promotion-top--special">
+               Receive 30% discount on restaurant
+              </div>
+              <div class="search-card-promotion-bottom">
+                <span class="green">5% off</span>
+                <p class="num-days">1 room 2 days</p>
+                <p class="price"><span class="cut-through">$150</span><strong class="bigi-text">$130</strong></p>
+                <p class="last-text">includes taxes and fees</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="search-card">
+            <figure class="search-card-figure">
+              <img src="./images/search-8.jpg" alt="Hotel 1" class="search-card-img">
+            </figure>
+            <div class="search-card-content">
+              <h3 class="overview__heading">Lakeside Motel Warefront</h3>
+              <div class="product--stars">
+                <div class="stars-container">
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star" class="star-icon"></ion-icon>
+                  <ion-icon name="star-half" class="star-icon"></ion-icon>
+                </div>
+                <p class="product-rating">4.5 (1200 Reviews)</p>
+              </div>
+              <div class="search-card-description">
+                <h4 class="search-card-title">Live a little and celebrate with champane</h4>
+                <p class="search-card-description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, velit itaque, fuga explicabo minima cum error atque</p>
+              </div>
+              <button class="search-card-button">See availability</button>
+              <div class="search-card-promotion-top hide">
+                Book now and receive 15% off
+              </div>
+              <div class="search-card-promotion-bottom">
+                <span class="green">5% off</span>
+                <p class="num-days">1 room 2 days</p>
+                <p class="price"><span class="cut-through">$150</span><strong class="bigi-text">$130</strong></p>
+                <p class="last-text">includes taxes and fees</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="load-results">
+            <button class="search-load-results">Load more results</button>
+          </div>
+        </div>
+      </div>
+      <div class="warning">
+        <ion-icon name="warning-outline" class="warning__icon"></ion-icon>
+        <p class="warning-text">
+          Check the latest Covid-19 restriction before you travel.
+          <a href="#" class="login__cta">Learn More</a>
+        </p>
+      </div>
+      <footer class="footer footer--special">
+        <div class="footer__logo">
+          <div class="logo">
+            <ion-icon name="airplane" class="logo__icon"></ion-icon>
+            <span class="logo__text">my Dream Place</span>
+          </div>
+        </div>
+        <nav class="footer-nav">
+          <h4 class="footer-nav__heading">Company</h4>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">About</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Jobs</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Newsroom</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Advertising</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav">
+          <h4 class="footer-nav__heading">Explore</h4>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Australia</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">New Zealand</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Japan</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Greece</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Poland</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">India</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link link--blue">See more</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav">
+          <h4 class="footer-nav__heading">Terms and Policies</h4>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Privacy Policy</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Terms of use</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Accessibility</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Reward System policy</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav">
+          <h4 class="footer-nav__heading">Help</h4>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Support</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Cancel your bookings</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Use Coupons</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Refund Policy</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link"
+                >International Travel Documents</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+    <div class="copyright">
+      <p class="copyright__text">&copy; my Dream Place 2023</p>
+    </div>
+    </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
+
+<!-- <div class="filter-group">
+  <div class="filter-item">
+    <input type="checkbox" class="filter-checkbox" />
+    <span class="filter-middle">$ 0 - $ 200</span>
+    <span class="filter-last">200</span>
+  </div>
+  <div class="filter-item">
+    <input type="checkbox" class="filter-checkbox" />
+    <span class="filter-middle">$ 0- $ 200</span>
+    <span class="filter-last">200</span>
+  </div>
+  <div class="filter-item">
+    <input type="checkbox" class="filter-checkbox" />
+    <span class="filter-middle">$ 0 - $ 200</span>
+    <span class="filter-last">200</span>
+  </div>
+  <div class="filter-item">
+    <input type="checkbox" class="filter-checkbox" />
+    <span class="filter-middle">$ 0 - $ 200</span>
+    <span class="filter-last">200</span>
+  </div>
+  <div class="filter-item">
+    <input type="checkbox" class="filter-checkbox" />
+    <span class="filter-middle">$ 0 - $ 200</span>
+    <span class="filter-last">200</span>
+  </div>
+  <div class="filter-item filter-item-special">
+    <span>set your own budget</span>
+    <ion-icon name="toggle-outline"></ion-icon>
+  </div>
+</div> -->

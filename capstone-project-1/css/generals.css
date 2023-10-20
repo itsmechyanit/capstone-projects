@@ -1,0 +1,84 @@
+/*Design Consideration
+
+---01 TYPOGRAPHY SYSTEM
+
+- FONT SIZES(px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weight
+Default:400
+500
+600
+700:Bold
+
+
+
+
+
+
+
+
+
+
+
+
+--- 07 Whitespaces
+
+-SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+/* 
+
+
+/* Global Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #777;
+  overflow-x: hidden;
+  font-size: 1.4rem;
+}
+
+.heading-primary {
+  color: #333;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+
+.heading-primary--white {
+  color: white;
+  line-height: 1.4;
+}
+
+.heading-primary--large {
+  font-size: 3.2;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container--special {
+  height: 100%;
+}
+
+.link--blue:link,
+.link--blue:visited {
+  text-decoration: none;
+  color: #339af0 !important;
+}
