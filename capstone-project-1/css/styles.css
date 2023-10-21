@@ -737,6 +737,7 @@
 
 .overview-description {
   margin-bottom: 1.8rem;
+  line-height: 1.5;
 }
 
 .facilities {
@@ -887,7 +888,7 @@
 /*************search page*****/
 
 .search-result-text {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .search-header {
@@ -920,6 +921,10 @@
   gap: 0.8rem;
   margin-top: 1rem;
   border-radius: 5px;
+}
+
+.search-name-icon {
+  font-size: 1.6rem;
 }
 
 .filter-by {
@@ -967,7 +972,7 @@
 .content-bottom {
   display: flex;
   margin-top: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   align-items: center;
 }
 
@@ -1038,13 +1043,13 @@
 }
 
 .sort-by-first {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #aaa;
   margin-bottom: 1rem;
 }
 
 .sort-by-second {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .search-card {
